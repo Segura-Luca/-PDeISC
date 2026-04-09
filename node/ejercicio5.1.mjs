@@ -2,7 +2,7 @@ import http from 'http';
 import { sumar, restar, multiplicar, dividir } from './ejercicio5.mjs';
 
 const server = http.createServer((req, res) => {
-    // Realizamos los cálculos
+    //  Creamos un array de objetos con las operaciones y sus resultados reales
     const resultados = [
         { op: "Suma (5 + 3)", res: sumar(5, 3) },
         { op: "Resta (8 - 6)", res: restar(8, 6) },
